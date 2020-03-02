@@ -5,7 +5,8 @@ import World from './features/world/index'
 
 function App() {
   return (
-    <div>
+    <div style={{width:'900px', margin: '0 auto'}}>
+      <h1 style={{color:'white', margin: '0 auto'}}>Race Against Corona</h1>
       <World />
     </div>
   );

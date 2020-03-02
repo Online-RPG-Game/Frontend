@@ -37,7 +37,7 @@ function Map(props) {
             style={{
                 width: '800px',
                 height: '400px',
-                margin: '100px auto'
+                margin: '200px auto'
             }}
         >
            {
