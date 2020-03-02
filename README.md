@@ -16,4 +16,4 @@ Using the in-game characters taxonomy according to the Bartle Taxonomy (see link
 ## Defining the World
 ### Hospital
 
-The whole gameplay happens in a multi-storey hospital building. 
+The whole gameplay happens in a multi-storey hospital building. Character should be able to move from room to room. 
