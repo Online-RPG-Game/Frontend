@@ -11,7 +11,9 @@ function World(props) {
             position: 'relative',
             width: '800px',
             height: '400px',
-            margin: '50px auto',
+            // margin: '100px auto',
+            backgroundColor: 'red',
+            // borderRadius: '200px solid white'
         }}
         >
             <Map tiles={tiles}/>

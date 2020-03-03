@@ -47,7 +47,7 @@ function handleKeyDown(e){
         case 40:
             return dispatchMove('SOUTH')
         default:
-        console.log(e.keyCode)
+        // console.log(e.keyCode)
     }
     }
 window.addEventListener('keydown', (e) => {

@@ -3,19 +3,24 @@ body {
 }
 .tile {
     display: inline-flex;
-    background-color:white;
+    
 }
 
 .grass {
-    background-color:white;
+    background-image: url('../tiles/floor.png');
+    background-size: 40px;
 }
 
+
 .rock {
-    background-image: url('../../tiles/rock.png');
-    margin: 0;
-    padding: 0;
+    background-image: url('../tiles/rock.png');
 }
 
 .tree {
-    background-image: url('../../tiles/tree.png');
+    background-image: url('../tiles/tree.png');
+    background-size: 40px;
+}
+
+.hospital {
+    background-image: url('../tiles/hospital.png');
 }
