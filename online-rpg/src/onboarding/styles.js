@@ -7,6 +7,10 @@ export default styled.div`
   align-items: center;
   height: 100vh;
 
+  .title {
+    color: #ccc;
+  }
+
   .form {
     display: flex;
     flex-direction: column;

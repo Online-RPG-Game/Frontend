@@ -7,6 +7,7 @@ import StyledForm from './styles';
 const Register = () => {
   return (
     <StyledForm>
+      <h1 className='title'>Sign Up</h1>
       <Form className='form'>
         <Field
           className='input'

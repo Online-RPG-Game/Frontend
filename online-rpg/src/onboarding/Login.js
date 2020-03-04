@@ -6,6 +6,7 @@ import StyledForm from './styles';
 const Login = () => {
   return (
     <StyledForm>
+      <h1 className='title'>Login</h1>
       <Form className='form'>
         <Field
           className='input'
