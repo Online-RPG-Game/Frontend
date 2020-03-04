@@ -6,7 +6,7 @@ const FormInput = styled.input`
   padding-left: 2em;
   height: 3em;
   font-size: 1em;
-  width:40%;
+  width:100%;
   font-family: "Press Start 2P", cursive;
   background-color: #e4ebe5;
   padding-top: 0.3em;
@@ -15,12 +15,16 @@ const FormInput = styled.input`
   border-radius: 10px;
 `
 
+const handleClick = (e)=>{
+    return 'hello'
+}
+
 
 export default function Interact(){
     return(
         <div style={{textAlign:'center'}}>
             <form>
-                <FormInput type='text' placeholder='Enter move' />
+                <FormInput type='text' placeholder='Enter move' value={e=>handleClick} />
             </form>
         </div>
     )
