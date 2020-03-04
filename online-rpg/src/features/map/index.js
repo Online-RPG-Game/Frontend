@@ -1,6 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import {SPRITE_SIZE} from '../../config/constants';
 import './styles.css'
+// import BorderWrapper from 'react-border-wrapper'
+import styled from 'styled-components'
+import border from '../tiles/border.gif'
+
+
+const MapWrapper = styled.div`
+position: relative;
+width: 640px;
+height: 320px;
+  `
 
 function getTileSprite(type){
     switch(type){
@@ -22,35 +33,32 @@ function MapTile(props) {
     className={`tile ${getTileSprite(props.tile)}`} 
     style={{
         height: SPRITE_SIZE,
-        width: SPRITE_SIZE,
-        margin: '0',
-        padding: '0'
-    }}
-    />
+        width: SPRITE_SIZE
+    }}/>
 }
 
 function MapRow(props){
-    return <div className="row" style={{margin: '0', padding:'0'}}>
+    return <div className="row" 
+    style={{
+        height: SPRITE_SIZE}}>
         {props.tiles.map( tile => <MapTile tile={tile}/>)}
     </div>
 }
 
 function Map(props) {
     return (
-        <div
-            style={{
-                position: 'relative',
-                width: '800px',
-                height: '400px',
-                backgroundColor: '#36271a',
-                borderImage: 'url(../tiles/tree.png)'
-            }}
-        >
+        <MapWrapper>
            {
                props.tiles.map( row => <MapRow tiles={row} /> )
            }
-        </div>
+        </MapWrapper>
     )
 }
 
-export default Map
+function mapStateToProps(state){
+    return {
+        tiles: state.map.tiles
+    }
+}
+
+export default connect(mapStateToProps)(Map)

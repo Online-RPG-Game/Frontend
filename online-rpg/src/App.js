@@ -10,11 +10,11 @@ function App() {
   return (
     <>
     <Heading/>
-    <div style={{display: 'flex', margin: '50px auto', padding: '10px', justifyContent: 'center'}}>
+    <div style={{display: 'flex', margin: '50px auto', padding: '10px', justifyContent: 'center', width: '80%'}}>
       <World />
       <Sidebar />
     </div>
-    <Interact />
+    <Interact/>
     </>
   );
 }

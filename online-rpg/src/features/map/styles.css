@@ -1,5 +1,6 @@
 body {
     background-color: black;
+
 }
 .tile {
     display: inline-flex;
@@ -8,19 +9,22 @@ body {
 
 .grass {
     background-image: url('../tiles/floor.png');
-    background-size: 40px;
+    background-size: 32px;
 }
 
 
 .rock {
     background-image: url('../tiles/rock.png');
+    background-size: 32px;
 }
 
 .tree {
     background-image: url('../tiles/tree.png');
-    background-size: 40px;
+    background-size: 32px;
 }
 
 .hospital {
     background-image: url('../tiles/hospital.png');
+    background-size: 32px;
 }
+
