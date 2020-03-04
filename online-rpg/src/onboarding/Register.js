@@ -2,20 +2,41 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withFormik, Form, Field } from 'formik';
 import { register } from '../onboarding/index';
+import StyledForm from './styles';
 
 const Register = () => {
   return (
-    <Form>
-      <Field type='text' name='username' placeholder='Username' />
-      <Field type='email' name='email' placeholder='Email' />
-      <Field type='password' name='password' placeholder='Password' />
-      <Field
-        type='password'
-        name='confirmPassword'
-        placeholder='Confirm Password'
-      />
-      <button type='submit'>Submit</button>
-    </Form>
+    <StyledForm>
+      <Form className='form'>
+        <Field
+          className='input'
+          type='text'
+          name='username'
+          placeholder='Username'
+        />
+        <Field
+          className='input'
+          type='email'
+          name='email'
+          placeholder='Email'
+        />
+        <Field
+          className='input'
+          type='password'
+          name='password'
+          placeholder='Password'
+        />
+        <Field
+          className='input'
+          type='password'
+          name='confirmPassword'
+          placeholder='Confirm Password'
+        />
+        <button className='submit-button' type='submit'>
+          Submit
+        </button>
+      </Form>
+    </StyledForm>
   );
 };
 
