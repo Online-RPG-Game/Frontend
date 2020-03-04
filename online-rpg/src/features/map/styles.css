@@ -1,21 +1,30 @@
 body {
     background-color: black;
+
 }
 .tile {
     display: inline-flex;
-    background-color:white;
+    
 }
 
 .grass {
-    background-color:white;
+    background-image: url('../tiles/floor.png');
+    background-size: 32px;
 }
 
+
 .rock {
-    background-image: url('../../tiles/rock.png');
-    margin: 0;
-    padding: 0;
+    background-image: url('../tiles/rock.png');
+    background-size: 32px;
 }
 
 .tree {
-    background-image: url('../../tiles/tree.png');
+    background-image: url('../tiles/tree.png');
+    background-size: 32px;
 }
+
+.hospital {
+    background-image: url('../tiles/hospital.png');
+    background-size: 32px;
+}
+
