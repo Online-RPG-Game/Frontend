@@ -16,6 +16,7 @@ function World(props) {
             // borderRadius: '200px solid white'
         }}
         >
+            
             <Map tiles={tiles}/>
             <Player />
         </div>
