@@ -1,18 +1,24 @@
-import { createStore, combineReducers } from 'redux';
+import {
+  createStore,
+  combineReducers,
+  compose,
+  applyMiddleware
+} from 'redux';
+import thunk from 'redux-thunk';
 import playerReducer from '../features/player/reducer';
 import mapReducer from '../features/map/reducer';
-import userReducer from '../onboarding/reducer';
 
 const rootReducer = combineReducers({
   player: playerReducer,
-  map: mapReducer,
-  user: userReducer
+  map: mapReducer
 });
+
+const composeEnhancers =
+  window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
 
 const store = createStore(
   rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeEnhancers(applyMiddleware(thunk))
 );
 
 export default store;

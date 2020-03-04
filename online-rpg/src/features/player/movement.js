@@ -71,9 +71,9 @@ export default function handleMovement(player) {
       // console.log(e.keyCode)
     }
   }
-  window.addEventListener('keydown', (e) => {
-    handleKeyDown(e);
-  });
+  // window.addEventListener('keydown', (e) => {
+  //   handleKeyDown(e);
+  // });
 
   return player;
 }

@@ -39,7 +39,7 @@ export default styled.div`
     background: transparent;
     cursor: pointer;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 0.8rem 1.6rem;
     transition: all 0.5s;
     color: #ccc;
     text-transform: uppercase;
