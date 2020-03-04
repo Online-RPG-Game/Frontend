@@ -4,17 +4,18 @@ body {
 }
 .tile {
     display: inline-flex;
-    
+    background-color: #497674;
 }
 
 .grass {
-    background-image: url('../tiles/floor.png');
+    background-image: url('../tiles/leafygrasshires.png');
     background-size: 32px;
+    
 }
 
 
 .rock {
-    background-image: url('../tiles/rock.png');
+    background-image: url('../tiles/bigrock.png');
     background-size: 32px;
 }
 
