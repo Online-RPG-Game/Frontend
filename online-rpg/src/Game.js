@@ -25,11 +25,11 @@ width: 100%;
 
 function Game() {
   return (
-    <Main>
+    <Main style={{color:'white'}}>
     <Sidebar />
     <Header>
     <Heading/>
-    <Countdown date={Date.now() + 120000}/>
+    <h2>Time left: <Countdown date={Date.now() + 120000}/></h2>
     <GamePlay>
     <World />
     <Interact/>
