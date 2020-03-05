@@ -32,6 +32,16 @@ function Player(props) {
     }));
   });
 
+  useEventListener('keydown', ({ code }) => {
+    if (code.indexOf('Arrow') === -1) return;
+    const direction =
+      DIRECTION[code.replace('Arrow', '').toUpperCase()];
+    setFacing((prevState) => ({
+      current: direction,
+      previous: prevState.current
+    }));
+  });
+
   useEffect(() => {
     if (facing.current === facing.previous) {
       setStep((prevState) =>

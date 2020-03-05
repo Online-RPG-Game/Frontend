@@ -66,7 +66,7 @@ function Map(props) {
 
 function mapStateToProps(state) {
   return {
-    tiles: state.map.tiles
+    tiles: state.map.two_d_array
   };
 }
 

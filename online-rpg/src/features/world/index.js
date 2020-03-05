@@ -2,12 +2,12 @@ import React from 'react'
 import Map from '../map/index'
 import Player from '../player/index'
 
-import { tiles } from '../../data/maps/1';
+import { two_d_array } from '../../data/maps/1';
 import store from '../../config/store'
 
 function World(props) {
     store.dispatch({type: 'ADD_TILES', payload: {
-        tiles,
+        two_d_array,
     }})
     return (
         <div
