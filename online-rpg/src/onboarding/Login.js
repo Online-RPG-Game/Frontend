@@ -35,7 +35,7 @@ const Login = (props) => {
           handleSubmit(values);
         }}
       >
-        {({ values }) => (
+        {() => (
           <Form className='form'>
             <Field
               className='input'
