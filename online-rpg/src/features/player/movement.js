@@ -31,7 +31,7 @@ export default function handleMovement(player) {
   }
 
   function roadBlock(oldPos, newPos) {
-    const tiles = store.getState().map.tiles;
+    const tiles = store.getState().map.two_d_array;
     const y = newPos[1] / SPRITE_SIZE;
     const x = newPos[0] / SPRITE_SIZE;
     const nextTile = tiles[y][x];
@@ -71,9 +71,9 @@ export default function handleMovement(player) {
       // console.log(e.keyCode)
     }
   }
-  // window.addEventListener('keydown', (e) => {
-  //   handleKeyDown(e);
-  // });
+  window.addEventListener('keydown', (e) => {
+    handleKeyDown(e);
+  });
 
   return player;
 }
