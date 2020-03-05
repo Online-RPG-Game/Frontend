@@ -18,7 +18,7 @@ const Register = (props) => {
     axios
       .post(`${url}api/registration/`, values)
       .then((res) => {
-        console.log(res);
+        localStorage.setItem('token', res.data.key);
         props.history.push('/login');
       })
       .catch((err) => {
@@ -32,11 +32,11 @@ const Register = (props) => {
       <Formik
         initialValues={initialValues}
         onSubmit={(values, { resetForm }) => {
-          // console.log(values);
+          resetForm();
           handleSubmit(values);
         }}
       >
-        {({ values }) => (
+        {() => (
           <Form className='form'>
             <Field
               className='input'

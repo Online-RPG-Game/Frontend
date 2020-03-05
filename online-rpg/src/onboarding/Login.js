@@ -17,7 +17,7 @@ const Login = (props) => {
     axios
       .post(`${url}api/login/`, values)
       .then((res) => {
-        console.log(res);
+        localStorage.setItem('token', res.data.key);
         props.history.push('/game');
       })
       .catch((err) => {
@@ -31,7 +31,7 @@ const Login = (props) => {
       <Formik
         initialValues={initialValues}
         onSubmit={(values, { resetForm }) => {
-          // console.log(values);
+          resetForm();
           handleSubmit(values);
         }}
       >
