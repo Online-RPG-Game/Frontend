@@ -13,12 +13,13 @@ const initialValues = {
 
 const url = process.env.REACT_APP_BASE_URL;
 
-const Register = () => {
+const Register = (props) => {
   const handleSubmit = (values) => {
     axios
       .post(`${url}api/registration/`, values)
       .then((res) => {
         console.log(res);
+        props.history.push('/login');
       })
       .catch((err) => {
         console.log(err);

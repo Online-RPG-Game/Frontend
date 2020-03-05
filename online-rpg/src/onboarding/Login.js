@@ -12,12 +12,13 @@ const initialValues = {
 
 const url = process.env.REACT_APP_BASE_URL;
 
-const Login = () => {
+const Login = (props) => {
   const handleSubmit = (values) => {
     axios
       .post(`${url}api/login/`, values)
       .then((res) => {
         console.log(res);
+        props.history.push('/game');
       })
       .catch((err) => {
         console.log(err);
