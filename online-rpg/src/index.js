@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
-import Game from './Game';
-import { Provider } from 'react-redux'
+import App from './App';
+import { Provider } from 'react-redux';
 
-import store from './config/store'
+import store from './config/store';
 
-ReactDOM.render(<Provider store={store}>
-    <Game />
-    </Provider>, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
