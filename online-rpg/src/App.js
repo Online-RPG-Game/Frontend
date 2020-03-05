@@ -16,7 +16,7 @@ const App = () => {
       <Route path='/pregame' component={Pregame} />
       <Route path='/storyline' component={Storyline} />
       <Route path='/creators' component={Creators} />
-      <Redirect to='/login' />
+      <Redirect to='/register' />
     </Switch>
   );
 };

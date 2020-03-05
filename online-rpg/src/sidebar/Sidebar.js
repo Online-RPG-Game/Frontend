@@ -1,8 +1,7 @@
 import React from 'react';
 import runner from '.././features/tiles/runner.gif'
 import styled from 'styled-components'
-import {Router, NavLink, BrowserRouter as Route} from 'react-router-dom'
-import Storyline from '../onboarding/Storyline';
+import {NavLink} from 'react-router-dom'
 
 const Side = styled.div`
 border: 10px solid transparent;
