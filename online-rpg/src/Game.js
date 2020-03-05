@@ -5,6 +5,7 @@ import Heading from './sidebar/Heading';
 // import Interact from './sidebar/interact';
 import Countdown from 'react-countdown-now';
 import styled from 'styled-components';
+import Gamesound from './features/Gamesound'
 
 const Main = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const Header = styled.div`
 function Game() {
   return (
     <Main style={{ color: 'white' }}>
+      <Gamesound />
       <Sidebar />
       <Header>
         <Heading />
