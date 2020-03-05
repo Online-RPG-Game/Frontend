@@ -14,7 +14,6 @@
 //   border-radius: 5px;
 // `
 
-<<<<<<< HEAD
 // const handleClick = (e)=>{
 //     return 'hello'
 // }
@@ -28,15 +27,3 @@
 //         </div>
 //     )
 // }
-=======
-
-export default function Interact(){
-    return(
-        <div style={{textAlign:'center'}}>
-            <form>
-                <FormInput type='text' placeholder='Enter move'  />
-            </form>
-        </div>
-    )
-}
->>>>>>> 6bbf83eac2e0e72934dbe69bca1426a0ecb8a54c
