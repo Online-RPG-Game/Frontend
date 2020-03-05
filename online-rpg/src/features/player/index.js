@@ -23,7 +23,7 @@ function Player(props) {
     const [step, setStep] = useState(0)
 
     useEventListener("keydown", ({ code })=> {
-        if(code.indexOf("Arrow")==-1) return
+        if(code.indexOf("Arrow")===-1) return
         const direction = DIRECTION[code.replace("Arrow", "").toUpperCase()]
         setFacing(prevState => ({
             current: direction,
