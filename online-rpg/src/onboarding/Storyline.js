@@ -20,7 +20,7 @@ const Styler = styled.span`
 color: red;
 `
 
-export default function Pregame(){
+export default function Storyline(){
     const history = useHistory()
     return(
         <Gamesetter>

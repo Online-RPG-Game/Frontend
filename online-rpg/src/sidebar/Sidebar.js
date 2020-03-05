@@ -29,14 +29,11 @@ export default function Sidebar(){
                 <img src={runner} alt="runner" style={{width:'100%'}}/>
                 <List>
                     <NavLink to="/storyline">Storyline</NavLink>
+                    <br/>
                     <NavLink to="/creators">Creators</NavLink>
+                    <br/>
                     <NavLink to="/main">Quit</NavLink>
                 </List>
-                {/* <Route
-                    path="/storyline"
-                    component={Storyline}
-                    exact 
-                /> */}
             </div>
 
         </Side>
