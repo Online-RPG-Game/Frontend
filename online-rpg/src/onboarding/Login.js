@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
 import axios from 'axios';
 import StyledForm from './styles';
+import runner from '../features/tiles/runner.gif'
 
 const initialValues = {
   username: '',
@@ -18,7 +19,7 @@ const Login = (props) => {
       .post(`${url}api/login/`, values)
       .then((res) => {
         localStorage.setItem('token', res.data.key);
-        props.history.push('/game');
+        props.history.push('/pregame');
       })
       .catch((err) => {
         console.log(err);
@@ -27,7 +28,10 @@ const Login = (props) => {
 
   return (
     <StyledForm>
-      <h1 className='title'>Login</h1>
+      <h1 style={{color:'red'}}>Race Against Corona</h1>
+      <p style={{color:'grey', lineHeight:'1.5em'}}>A Lambda MUD project by <br/>Liam, Toby and Mogwai</p>
+      <img src={runner} alt="Race Against Corona" style={{width:"150px"}}/>
+      <h2 className='title'>Login</h2>
       <Formik
         initialValues={initialValues}
         onSubmit={(values, { resetForm }) => {

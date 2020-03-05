@@ -7,7 +7,7 @@ export default function Gamesound() {
       <Sound
         url={gameMusic}
         playStatus={Sound.status.PLAYING}
-        volume={30}
+        volume={10}
         autoLoad={true}
         loop={true}
       />

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
 import axios from 'axios';
 import StyledForm from './styles';
+import runner from '../features/tiles/runner.gif'
 
 const initialValues = {
   username: '',
@@ -28,6 +29,9 @@ const Register = (props) => {
 
   return (
     <StyledForm>
+      <h1 style={{color:'green'}}>Race Against Corona</h1>
+      <p style={{color:'grey', lineHeight:'1.5em'}}>A Lambda MUD project by <br/>Liam, Toby and Mogwai</p>
+      <img src={runner} alt="Race Against Corona" style={{width:"150px"}}/>
       <h1 className='title'>Sign Up</h1>
       <Formik
         initialValues={initialValues}
