@@ -44,6 +44,7 @@ export default styled.div`
     color: #ccc;
     text-transform: uppercase;
     margin-top: 0.5rem;
+    outline: none;
 
     &:hover {
       background: #e05cca;

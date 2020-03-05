@@ -16,7 +16,7 @@ const url = process.env.REACT_APP_BASE_URL;
 const Register = () => {
   const handleSubmit = (values) => {
     axios
-      .post(`${url}api/registration`, values)
+      .post(`${url}api/registration/`, values)
       .then((res) => {
         console.log(res);
       })
