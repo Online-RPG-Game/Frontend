@@ -2,7 +2,7 @@ import React from 'react';
 import World from './features/world/index';
 import Sidebar from './sidebar/Sidebar';
 import Heading from './sidebar/Heading';
-import Interact from './sidebar/interact';
+// import Interact from './sidebar/interact';
 import Countdown from 'react-countdown-now';
 import styled from 'styled-components';
 
@@ -32,7 +32,7 @@ function Game() {
         </h2>
         <GamePlay>
           <World />
-          <Interact />
+          {/* <Interact /> */}
         </GamePlay>
       </Header>
     </Main>

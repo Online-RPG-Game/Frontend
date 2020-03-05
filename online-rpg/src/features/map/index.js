@@ -47,8 +47,8 @@ function MapRow(props) {
         height: SPRITE_SIZE
       }}
     >
-      {props.tiles.map((tile) => (
-        <MapTile tile={tile} />
+      {props.tiles.map((tile, i) => (
+        <MapTile key={i} tile={tile} />
       ))}
     </div>
   );
@@ -57,8 +57,8 @@ function MapRow(props) {
 function Map(props) {
   return (
     <MapWrapper>
-      {props.tiles.map((row) => (
-        <MapRow tiles={row} />
+      {props.tiles.map((row, i) => (
+        <MapRow key={i} tiles={row} />
       ))}
     </MapWrapper>
   );
