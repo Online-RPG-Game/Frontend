@@ -25,8 +25,7 @@ const Header = styled.div`
 function Game() {
   return (
     <Main style={{ color: 'white' }}>
-      <Gamesound />
-      <Sidebar />
+      <Sidebar style={{paddingTop:'50px'}}/>
       <Header>
         <Heading />
         <h2>

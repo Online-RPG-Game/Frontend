@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { SPRITE_SIZE } from '../../config/constants';
 import './styles.css';
-// import BorderWrapper from 'react-border-wrapper'
+import Gamesound from '../Gamesound'
 import styled from 'styled-components';
 // import border from '../tiles/border.gif'
 
@@ -57,6 +57,7 @@ function MapRow(props) {
 function Map(props) {
   return (
     <MapWrapper>
+      <Gamesound />
       {props.tiles.map((row, i) => (
         <MapRow key={i} tiles={row} />
       ))}
