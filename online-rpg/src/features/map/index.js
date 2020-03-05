@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { connect } from 'react-redux'
 import {SPRITE_SIZE} from '../../config/constants';
 import './styles.css'
 // import BorderWrapper from 'react-border-wrapper'
 import styled from 'styled-components'
-import border from '../tiles/border.gif'
 
 
 const MapWrapper = styled.div`
@@ -57,7 +56,7 @@ function Map(props) {
 
 function mapStateToProps(state){
     return {
-        tiles: state.map.tiles
+        tiles: state.map.two_d_array
     }
 }
 

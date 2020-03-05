@@ -14,16 +14,12 @@ const FormInput = styled.input`
   border-radius: 5px;
 `
 
-const handleClick = (e)=>{
-    return 'hello'
-}
-
 
 export default function Interact(){
     return(
         <div style={{textAlign:'center'}}>
             <form>
-                <FormInput type='text' placeholder='Enter move' value={e=>handleClick} />
+                <FormInput type='text' placeholder='Enter move'  />
             </form>
         </div>
     )
