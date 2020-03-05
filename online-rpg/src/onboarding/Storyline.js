@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import skull from '../features/tiles/skullman.gif'
 import StyledForm from './styles';
+import { useHistory } from 'react-router-dom'
 
 const Gamesetter = styled.div`
 display: flex;
@@ -20,6 +21,7 @@ color: red;
 `
 
 export default function Pregame(){
+    const history = useHistory()
     return(
         <Gamesetter>
             <h1>You are the <Styler>last</Styler> <br/>healthy person on earth</h1>
@@ -32,7 +34,9 @@ export default function Pregame(){
             <p>But there's no rule against kooks being altruistic, so now you're on a one-man mission to break into a secret lab that purportedly holds a cure to the virus, but only sells to the super-mega-hyper-multi-rich.</p>
             <p style={{color:'yellow'}}>The world bids you good fortune, kooky hero.</p>
             <StyledForm style={{height:'70px'}}>
-            <button className='submit-button' type='submit'>
+            <button className='submit-button' type='submit' onClick={()=> {
+                history.push('/game')
+            }}>
               PLAY GAME!
             </button>
             </StyledForm>

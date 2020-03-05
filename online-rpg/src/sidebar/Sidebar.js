@@ -2,6 +2,7 @@ import React from 'react';
 import runner from '.././features/tiles/runner.gif'
 import styled from 'styled-components'
 import {Router, NavLink, BrowserRouter as Route} from 'react-router-dom'
+import Storyline from '../onboarding/Storyline';
 
 const Side = styled.div`
 border: 10px solid transparent;
@@ -27,12 +28,15 @@ export default function Sidebar(){
             <div>
                 <img src={runner} alt="runner" style={{width:'100%'}}/>
                 <List>
-                    <Route>
-                    <NavLink to="/login">Storyline</NavLink>
+                    <NavLink to="/storyline">Storyline</NavLink>
                     <NavLink to="/creators">Creators</NavLink>
                     <NavLink to="/main">Quit</NavLink>
-                    </Route>
                 </List>
+                {/* <Route
+                    path="/storyline"
+                    component={Storyline}
+                    exact 
+                /> */}
             </div>
 
         </Side>
