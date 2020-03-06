@@ -29,9 +29,11 @@ const Register = (props) => {
 
   return (
     <StyledForm>
+      <div style={{textAlign:'center', width: '90vw'}}>
       <h1 style={{color:'green'}}>Race Against Corona</h1>
       <p style={{color:'grey', lineHeight:'1.5em'}}>A Lambda MUD project by <br/>Liam, Toby and Mogwai</p>
       <img src={runner} alt="Race Against Corona" style={{width:"150px"}}/>
+      </div>
       <h1 className='title'>Sign Up</h1>
       <Formik
         initialValues={initialValues}

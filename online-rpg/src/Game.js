@@ -22,7 +22,7 @@ const Header = styled.div`
 
 function Game() {
   return (
-    <Main style={{ color: 'white' }}>
+    <Main style={{ color: 'grey' }}>
       <Sidebar/>
       <Header>
         <Heading />

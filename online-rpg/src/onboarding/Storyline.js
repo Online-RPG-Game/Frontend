@@ -13,7 +13,7 @@ align-items: center;
 line-height: 2.5em;
 text-align: center;
 flex-direction: column;
-width: 1000px;
+width: 90vw;
 margin: 0 auto;
 `
 const Styler = styled.span`

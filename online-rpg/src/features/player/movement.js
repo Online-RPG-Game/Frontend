@@ -5,6 +5,9 @@ import {
   MAP_HEIGHT
 } from '../../config/constants';
 
+
+
+
 export default function handleMovement(player) {
   function getNewPosition(oldPos, direction) {
     switch (direction) {
